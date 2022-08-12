@@ -2,13 +2,46 @@
     background-color: rgb(0, 0, 0, .9);
 
     display: flex;
+    flex-direction: column;
 
     position: relative;
 
-    padding: 20px;
 
     margin: auto;
 
     height: 100vh;
     width: 100%;
+
+    transition: .5s;
+
+    .Container {
+        display: flex;
+        
+        padding: 10px;
+        gap: 50px;
+        justify-content: center;
+
+        margin: auto;
+    }
+
+
+
+
+
+    
+    @media only screen and (max-width: 1000px) {
+        .Container {
+            gap: 20px;
+            flex-direction: column;
+
+            width: 80%;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .Container {
+
+            width: 100%;
+        }
+    }
 }
