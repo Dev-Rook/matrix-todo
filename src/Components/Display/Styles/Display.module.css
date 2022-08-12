@@ -43,6 +43,42 @@
   font-weight: 400;
   margin: auto;
 }
+.Display .Task_List {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: auto;
+  margin-top: 100px;
+  width: 95%;
+}
+.Display .Task_List .Task {
+  display: flex;
+  padding: 5px;
+}
+.Display .Task_List .Task .Task_Icon {
+  margin: auto;
+  margin-left: 0px;
+  height: 30px;
+  width: 30px;
+}
+.Display .Task_List .Task .The_Task {
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+  margin-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.Display .Task_List .Task .Delete_Icon {
+  margin: auto;
+  margin-right: 0px;
+  height: 30px;
+  width: 30px;
+}
 
 @media only screen and (max-width: 1000px) {
   .Display {
