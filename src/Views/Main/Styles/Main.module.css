@@ -15,15 +15,153 @@
   justify-content: center;
   margin: auto;
 }
+.Main .Container .Input_Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  margin: auto;
+  transition: 0.5s;
+}
+.Main .Container .Input_Container .fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.Main .Container .Input_Container .fieldset .label {
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0px;
+}
+.Main .Container .Input_Container .fieldset .input {
+  border: 3px solid grey;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  width: 400px;
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1000px) {
+  .Main .Container .Input_Container .fieldset .input {
+    width: 100%;
+  }
+}
+.Main .Container .Display {
+  border: 5px solid grey;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  padding: 5px;
+  gap: 20px;
+  margin: auto;
+  height: 500px;
+  width: 600px;
+  transition: 0.5s;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.Main .Container .Display .Header {
+  display: flex;
+  margin: auto;
+  margin-top: 0px;
+  height: 60px;
+  width: 100%;
+}
+.Main .Container .Display .Header .Input_Counter {
+  border: 3px solid grey;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 120px;
+}
+.Main .Container .Display .Header .Input_Counter .Count {
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+}
+.Main .Container .Display .Header .Date_Box {
+  border: 3px solid grey;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  width: 120px;
+}
+.Main .Container .Display .Header .Date_Box .Date {
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+}
+.Main .Container .Display .Task_List {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 0px;
+  width: 100%;
+}
+.Main .Container .Display .Task_List .Task {
+  display: flex;
+  padding: 5px;
+}
+.Main .Container .Display .Task_List .Task .Task_Icon {
+  margin: auto;
+  margin-left: 0px;
+  height: 30px;
+  width: 30px;
+}
+.Main .Container .Display .Task_List .Task .The_Task {
+  color: #35a967;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Main .Container .Display .Task_List .Task .Delete_Icon {
+  margin: auto;
+  margin-right: 0px;
+  height: 30px;
+  width: 30px;
+}
+.Main .Container .Display::-webkit-scrollbar {
+  display: none;
+}
 @media only screen and (max-width: 1000px) {
   .Main .Container {
     gap: 20px;
     flex-direction: column;
     width: 80%;
   }
+  .Main .Container .Input_Container {
+    width: 90%;
+  }
+  .Main .Container .Display {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .Main .Container {
+    width: 100%;
+  }
+  .Main .Container .Input_Container {
+    width: 100%;
+  }
+  .Main .Container .Display {
     width: 100%;
   }
 }/*# sourceMappingURL=Main.module.css.map */
