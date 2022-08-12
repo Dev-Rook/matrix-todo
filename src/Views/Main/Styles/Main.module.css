@@ -4,7 +4,7 @@
   flex-direction: column;
   position: relative;
   margin: auto;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   transition: 0.5s;
 }
@@ -59,7 +59,7 @@
   grid-template-columns: 1fr;
   position: relative;
   padding: 5px;
-  gap: 20px;
+  gap: 0px;
   margin: auto;
   height: 500px;
   width: 600px;
@@ -115,7 +115,6 @@
 }
 .Main .Container .Display .Task_List .Task {
   display: flex;
-  padding: 5px;
 }
 .Main .Container .Display .Task_List .Task .Task_Icon {
   margin: auto;
@@ -163,5 +162,8 @@
   }
   .Main .Container .Display {
     width: 100%;
+  }
+  .Main .Container .Display .The_Task {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=Main.module.css.map */

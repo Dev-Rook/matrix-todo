@@ -9,7 +9,7 @@
 
     margin: auto;
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     transition: .5s;
@@ -90,7 +90,7 @@
             position: relative;
 
             padding: 5px;
-            gap: 20px;
+            gap: 0px;
 
             margin: auto;
 
@@ -171,8 +171,6 @@
                 .Task {
                     display: flex;
             
-                    padding: 5px;
-            
                     .Task_Icon {
                         margin: auto;
                         margin-left: 0px;
@@ -238,6 +236,10 @@
 
             .Display {
                 width: 100%;
+
+                .The_Task {
+                    font-size: 15px;
+                }
             }
 
         }
