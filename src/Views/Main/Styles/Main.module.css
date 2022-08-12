@@ -1,0 +1,9 @@
+.Main {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  position: relative;
+  padding: 20px;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}/*# sourceMappingURL=Main.module.css.map */
